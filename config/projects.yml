@@ -1,0 +1,10 @@
+---
+main:
+  modularize_sinatra:
+    title: "Modularize Sinatra"
+    description: "Modularized Sinatra Skeleton Generator"
+    link: "https://github.com/goyalankit/modularize_sinatra/tree/master"
+  bayou:
+    title: "Bayou"
+    description: "A weekly connected distributed storage system"
+    link: "https://github.com/goyalankit/bayou"
