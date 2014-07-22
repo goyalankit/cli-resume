@@ -70,7 +70,7 @@ class ResumeCli::Models::Linkedin
   def self.projects
     message = "\n"
     PROJECTS['main'].each do |key, project|
-      message << color(ORANGE, "#{project["title"]}: ") << color('#009D9C', project["description"]) << "\n"
+      message << color(ORANGE, "#{project["title"]}: ") << color('#009D9C', word_wrap(project["description"])) << "\n"
       message << project["link"] << "\n\n"
     end
     return message
@@ -81,6 +81,7 @@ class ResumeCli::Models::Linkedin
     message << color(WHITE, 'basic') << ": Get the basic profile\n" 
     message << color(WHITE, 'positions|exp') << ": Get the positions that I have held over the years\n" 
     message << color(WHITE, 'education|edu') << ": Education history\n" 
+    message << color(WHITE, 'projects|pro') << ": List of my projects\n" 
     return message
   end
 
@@ -88,11 +89,11 @@ class ResumeCli::Models::Linkedin
     return "type [[;white;]help], to list supported commands"
   end  
 
-
   class << self
     alias :exp :positions
     alias :experience :positions
     alias :edu :education
+    alias :pro :projects
   end
 
   private

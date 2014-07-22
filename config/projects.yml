@@ -12,4 +12,31 @@ main:
     title: "Bayou"
     description: "A weekly connected distributed storage system"
     link: "https://github.com/goyalankit/bayou"
-
+  chatty:
+    title: "Chatty Meanbot"
+    description: "A jabber client bot."
+    link: "https://github.com/goyalankit/chatty-meanbot/"
+  lbot:
+    title: "Listener Bot"
+    description: "An android app to receive notifications using GCM"
+    link: "http://github.com/goyalankit/listenerbot"
+  dfa:
+    title: "DFA framework and LLVM passes"
+    description: "Implementation of Framework for data flow analysis and LLVM passes that include Local Optimizations (constant folding, strength reduction, algebraic identity), LICM (loop invariant code motion) and Dead code elimination"
+    link: "http://github.com/goyalankit/compilers-and-llvm"
+  lyricit:
+    title: "Lyricit"
+    description: "Gem to update itunes lyrics from command line."
+    link: "http://github.com/goyalankit/lyricit"
+  mbdb:
+    title: "Mbdb"
+    description: "Implementation of MDB (miniature database) that uses Berkley DB as backend to support subset of SQL"
+    link: "http://github.com/goyalankit/mbdb"
+  mbot:
+    title: "Mr. Mean Bot"
+    description: "Twitter Dictionary bot"
+    link: "https://github.com/goyalankit/themeanbot"
+  paxos:
+    title: "Paxos"
+    description: "Replicated bank applicaiton using Paxos protocol"
+    link: "https://github.com/goyalankit/paxos"
