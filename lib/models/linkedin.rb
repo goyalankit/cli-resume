@@ -82,6 +82,7 @@ class ResumeCli::Models::Linkedin
     message << color(WHITE, 'positions|exp') << ": Get the positions that I have held over the years\n" 
     message << color(WHITE, 'education|edu') << ": Education history\n" 
     message << color(WHITE, 'projects|pro') << ": List of my projects\n" 
+    message << color(WHITE, 'help') << ": This help menu\n" 
     return message
   end
 
