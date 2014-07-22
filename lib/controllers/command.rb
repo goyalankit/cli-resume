@@ -15,11 +15,11 @@ class ResumeCli::Controllers::Command < Sinatra::Base
     end
 
     get '/command/*' do
-      #begin
+      begin
         send_to_terminal(Linkedin.instance_eval(params['command']))
-      #rescue NameError => e
-        #send_to_terminal("command not supported.\ntype [[;white;]help] to list supported commands")
-      #end
+      rescue NameError => e
+        send_to_terminal("[[;red;]command not supported.]\ntype [[;white;]help] to list supported commands")
+      end
     end
 end
 

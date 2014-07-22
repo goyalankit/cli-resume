@@ -3,10 +3,10 @@ require 'oauth'
 
 # Fill the keys and secrets you retrieved after registering your app
 
-api_key = 'YOUR_API_KEY'
-api_secret = 'YOUR_API_SECRET'
-user_token = 'YOUR_USER_TOKEN'
-user_secret = 'YOUR_USER_SECRET'
+api_key = ENV['API_KEY']
+api_secret = ENV['API_SECRET']
+user_token = ENV['USER_TOKEN']
+user_secret = ENV['USER_SECRET']
  
 # Specify LinkedIn API endpoint
 configuration = { :site => 'https://api.linkedin.com' }

@@ -1,5 +1,9 @@
 ---
 main:
+  this:
+    title: "CLI Resume"
+    description: "This website"
+    link: "https://github.com/goyalankit/cli-resume"
   modularize_sinatra:
     title: "Modularize Sinatra"
     description: "Modularized Sinatra Skeleton Generator"
@@ -8,3 +12,4 @@ main:
     title: "Bayou"
     description: "A weekly connected distributed storage system"
     link: "https://github.com/goyalankit/bayou"
+

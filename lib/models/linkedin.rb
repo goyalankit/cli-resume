@@ -16,7 +16,7 @@ class ResumeCli::Models::Linkedin
     p[:skills]['values'].each_with_index do |skill, num|
       message << skill['skill']['name'] if num == 0
       break if num > 5
-      message << ', ' << skill['skill']['name']
+      message << ', ' << skill['skill']['name'] unless num == 0
     end
 
     message << "\n"
