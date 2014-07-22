@@ -79,7 +79,7 @@ class ResumeCli::Models::Linkedin
   def self.help
     message = "List of supported commands:\n"
     message << color(WHITE, 'basic') << ": Get the basic profile\n" 
-    message << color(WHITE, 'positions|exp') << ": Get the positions that I have held over the years\n" 
+    message << color(WHITE, 'positions|pos|exp') << ": Get the positions that I have held over the years\n" 
     message << color(WHITE, 'education|edu') << ": Education history\n" 
     message << color(WHITE, 'projects|pro') << ": List of my projects\n" 
     message << color(WHITE, 'help') << ": This help menu\n" 
@@ -93,6 +93,7 @@ class ResumeCli::Models::Linkedin
   class << self
     alias :exp :positions
     alias :experience :positions
+    alias :pos :positions
     alias :edu :education
     alias :pro :projects
   end
