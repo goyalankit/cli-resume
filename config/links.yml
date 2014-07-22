@@ -1,0 +1,17 @@
+---
+main:
+  linkedin_in:
+    title: "LinkedIn"
+    link: "http://linkedin.com/in/goyalankit3"
+  twitter:
+    title: "Twitter"
+    link: "https://twitter.com/_goyalankit"
+  github:
+    title: "Github"
+    link: "http://github.com/goyalankit"
+  blog:
+    title: "Blog"
+    link: "http://goyalankit.com" 
+  projects:
+    title: "Projects"
+    link: "http://goyalankit.com/labs"

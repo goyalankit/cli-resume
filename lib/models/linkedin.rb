@@ -82,7 +82,33 @@ class ResumeCli::Models::Linkedin
     message << color(WHITE, 'positions|pos|exp') << ": Get the positions that I have held over the years\n" 
     message << color(WHITE, 'education|edu') << ": Education history\n" 
     message << color(WHITE, 'projects|pro') << ": List of my projects\n" 
+    message << color(WHITE, 'recommendations|reco') << ": LinkedIn recommendations\n" 
+    message << color(WHITE, 'links') << ": Links to my various profiles\n" 
     message << color(WHITE, 'help') << ": This help menu\n" 
+    return message
+  end
+
+  def self.reco
+    fields = ['recommendations-received']
+    p = linkedin(fields)
+    recoms = p[:recommendationsReceived]
+    message = "\n"
+    message << color(WHITE, "Recommendations Received\n")
+    message << "[[;white;]" << "-" * 25 << "]\n\n"
+
+    recoms["values"].each do |reco|
+      message << word_wrap(reco["recommendationText"]) << "\n"
+      message << color(ORANGE, "-") << color(ORANGE, reco["recommender"]["firstName"]) << " " << color(ORANGE, reco["recommender"]["lastName"])
+    end
+    
+    return message
+  end
+
+  def self.links
+    message = "\n"
+    LINKS['main'].each do |key, link|
+      message << color(ORANGE, "#{link["title"]}: ") << link["link"] << "\n"
+    end
     return message
   end
 
@@ -96,6 +122,7 @@ class ResumeCli::Models::Linkedin
     alias :pos :positions
     alias :edu :education
     alias :pro :projects
+    alias :recommendations :reco
   end
 
   private
