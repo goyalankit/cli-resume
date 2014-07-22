@@ -40,4 +40,7 @@ bundle install
 rackup
 ```
 
-You can refer to [LinkedIn Profile Api](https://developer.linkedin.com/documents/profile-fields) for possible information that you can retrieve.
+### Other sources
+* Check [jcubic](http://terminal.jcubic.pl/) for the terminal javascript library
+* Check [modularize_sinatra](https://github.com/goyalankit/modularize_sinatra) for the project's directory structure.
+* You can refer to [LinkedIn Profile Api](https://developer.linkedin.com/documents/profile-fields) for possible information that you can retrieve.
