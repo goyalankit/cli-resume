@@ -12,5 +12,5 @@ jQuery(document).ready(function($) {
     .fail(function() {
       term.echo("unknown command");
     });
-  }, {prompt: '> ', name: 'test', greetings: "Welcome to my resume!"});
+  }, {prompt: '> ', name: 'test', greetings: "Welcome to my resume!\ntype [[;white;]help], to list supported commands"});
 });
