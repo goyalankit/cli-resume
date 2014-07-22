@@ -80,7 +80,7 @@
 }
 .terminal .terminal-output div div, .cmd .prompt {
     display: block;
-    line-height: 24px;
+    line-height: 18px;
     height: auto;
 }
 .cmd .prompt {
@@ -90,8 +90,9 @@
     font-family: FreeMono, monospace;
     color: #0c0;
     background-color: #000;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 3px;
 }
 .terminal-output > div {
     /*padding-top: 3px;*/
@@ -110,7 +111,7 @@
 }
 
 .cursor.blink {
-  line-height: 20px;
+  line-height: 14px;
 }
 
 .terminal .terminal-output div div::-moz-selection,
